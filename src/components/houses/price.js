@@ -9,7 +9,8 @@ class Price extends Component{
         opdenWalls1: false,
         opdenRoof1: false,
         opdenRoof2: false,
-        opdenRoof3: false
+        opdenRoof3: false,
+        opdenRoof4: false
     }
     toggleFundament1(){
         this.setState({openFundament1: !this.state.openFundament1})
@@ -31,6 +32,9 @@ class Price extends Component{
     }
     toggleRoof3(){
         this.setState({opdenRoof3: !this.state.opdenRoof3})
+    }
+    toggleRoof4(){
+        this.setState({opdenRoof4: !this.state.opdenRoof4})
     }
     render(){
         return(
@@ -118,11 +122,11 @@ class Price extends Component{
                             </div>
                             <div className="card  w-50">
                                 <div className="card-header">
-                                    <h5 className="mb-0"  onClick={this.toggleFundament1.bind(this)}>
+                                    <h5 className="mb-0"  onClick={this.toggleFundament3.bind(this)}>
                                         <span>Приёмка инженером технического надзора</span>
                                     </h5>
                                 </div>
-                                <div className={this.state.openFundament1 ? "collapse show" : "collapse"} >
+                                <div className={this.state.openFundament3 ? "collapse show" : "collapse"} >
                                     <div className="card-body">
                                         <div>
                                             <ul>
@@ -227,11 +231,11 @@ class Price extends Component{
                             </div>
                             <div className="card  w-50">
                                 <div className="card-header">
-                                    <h5 className="mb-0"  onClick={this.toggleRoof3.bind(this)}>
+                                    <h5 className="mb-0"  onClick={this.toggleRoof4.bind(this)}>
                                         <span>Кровельный материал</span>
                                     </h5>
                                 </div>
-                                <div className={this.state.opdenRoof3 ? "collapse show" : "collapse"} >
+                                <div className={this.state.opdenRoof4 ? "collapse show" : "collapse"} >
                                     <div className="card-body">
                                         <div>
                                             <ul>

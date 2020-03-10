@@ -39,7 +39,7 @@ class HomePage extends Component{
                             </div>
                             <div className="main-banner-text">Индивидуальный  проект</div>
                             <div className="banner_button TODO:">
-                                <span><a className="flex-c" href="/house/10">Подробнее</a></span>
+                                <span><a className="flex-c" href="/house/13">Подробнее</a></span>
                             </div>
                         </div>
                     </div>
@@ -61,6 +61,97 @@ class HomePage extends Component{
                                     <div className="image-shadow"></div>
                                 </div>
                                 <div className="p-a image-text">Проекты бань</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="section">
+                    <div className="block-wrapper">
+                        <div className="why">
+                            <h2 className="main-section-title">Почему именно мы?</h2>
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        <b>Как делают конкуренты?</b>
+                                    </p>
+                                </div>
+                                <div className="w-50  p-r">
+                                    <p className="h2">
+                                        <b>Как делаем мы?</b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        Используют древесину естественной влажности !
+                                        (При эксплуатации древесина начнёт усыхать и 
+                                        изменять свои геометрические характеристики, 
+                                        что скажется на геометрии дома)
+                                    </p>
+                                </div>
+                                <div className="w-50  p-r">
+                                    <p className="h2" >
+                                        Мы используем только древесину камерной сушки
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        Применяют для соединения панелей доску сечением 50мм 
+                                        (Грубое нарушение технологии, которое может привести 
+                                        к разрушению конструкции)
+                                    </p>
+                                </div>
+                                <div className="w-50  p-r">
+                                    <p className="h2" >
+                                        Наша компания применяет стыковочный брус 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        Используют некачественный крепёж
+                                        (При нагрузках саморезы просто ломаются и не выполняют свою функцию)
+                                    </p>
+                                </div>
+                                <div className="w-50  p-r">
+                                    <p className="h2" >
+                                        Используем оцинкованный импортный крепёж
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        Осуществляют раскрой панелей вручную на строительной площадке
+                                        (Невозможно достичь вручную, такого качества, как на производстве)
+                                    </p>
+                                </div>
+                                <div className="w-50  p-r">
+                                    <p className="h2" >
+                                        Мы доставляем готовый заводской домокомплект
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        Отсутствует конструкционный крепёж
+                                        (Конструкция не связана в единое целое, что приводит к шаткости конструкции) 
+                                    </p>
+                                </div>
+                                <div className="w-50  p-r">
+                                    <p className="h2" >
+                                    Мы используем итальянский конструкционный крепёж
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1112,6 +1112,10 @@ li.react-tabs__tab {
 .awssld__bullets button{
   background-color: rgb(88, 118, 64) !important;
 }
+.why{
+  background-color:#eee;
+  padding: 27px 50px;
+}
 .why_sip{
   background-color:#eee;
   margin-top: 80px;
@@ -1389,4 +1393,17 @@ background-color:
 #ffb226;
 box-shadow: inset 0 -3px 0 0
   #bb6e00;
+}
+.awssld__bullets{
+  bottom: 5px !important;
+  z-index: 2;
+}
+.awssld__bullets button {
+  background-color: #fff !important;
+}
+.awssld__controls__arrow-left::before,
+.awssld__controls__arrow-right::before,
+.awssld__controls__arrow-left::after,
+.awssld__controls__arrow-right::after{
+  background-color: #fff !important;
 }

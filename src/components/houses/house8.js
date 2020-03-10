@@ -13,18 +13,13 @@ class House8Page extends Component{
         selectedP: 0,
         stateP: false,
         selectedF: 0,
-        stateF: false,
-        selectedI: 0,
-        stateI: false
+        stateF: false
     };
     toggleP(index){
         this.setState({selectedP: index, stateP: true})
     }
     toggleF(index){
         this.setState({selectedF: index, stateF: true})
-    }
-    toggleI(index){
-        this.setState({selectedI: index, stateI: true})
     }
     render(){
         const imagesP = [
@@ -37,20 +32,13 @@ class House8Page extends Component{
             require("../../images/houses/8/f3.jpg"),
             require("../../images/houses/8/f4.jpg")
         ];
-        const imagesI = [
-            require("../../images/houses/8/i1.jpg"),
-            require("../../images/houses/8/i2.jpg"),
-            require("../../images/houses/8/i3.jpg"),
-            require("../../images/houses/8/i4.jpg"),
-            require("../../images/houses/8/i5.jpg")
-        ];
         return(
             <>
                 <Header/>
                 <section className="qwer">
                     <div className="block-wrapper">
                         <div className="q">
-                            <h1>Проект П-102</h1>
+                            <h1>Проект П-117</h1>
                         </div>
                         <div className="qq">
                             <div className="qqq">
@@ -58,14 +46,15 @@ class House8Page extends Component{
                                     <div data-src={require("../../images/houses/8/m1.jpg")} />
                                     <div data-src={require("../../images/houses/8/m2.jpg")} />
                                     <div data-src={require("../../images/houses/8/m3.jpg")} />
+                                    <div data-src={require("../../images/houses/8/m4.jpg")} />
                                 </AwesomeSlider>  
                             </div>
                             <div className="qqqq">
-                                <div className="detail_area col-md-12">135м<sup>2</sup></div>
+                                <div className="detail_area col-md-12">117м<sup>2</sup></div>
                                 <div className="flex-sb flex-w">
                                     <div className="flex-c w-50 flex-r m-bot w-100-1">
                                         <div className="flex f-s-50">
-                                            4
+                                            5
                                             <div>
                                                 <div>
                                                     <img src={require('../../images/bedroom.svg')}  alt="" style={{width:"50px"}}/>
@@ -83,22 +72,11 @@ class House8Page extends Component{
                                                 </div>
                                             </div>
                                         </div>
-                                        <span className="f-s-24">санузела</span>
+                                        <span className="f-s-24">санузел</span>
                                     </div>
                                     <div className="flex-c w-50 flex-r m-bot w-100-1">
                                         <div className="flex f-s-50">
-                                            1
-                                            <div>
-                                                <div>
-                                                    <img src={require('../../images/balcon.svg')}  alt="" style={{width:"50px"}}/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span className="f-s-24">балкон</span>
-                                    </div>
-                                    <div className="flex-c w-50 flex-r m-bot w-100-1">
-                                        <div className="flex f-s-50">
-                                            1
+                                            0
                                             <div>
                                                 <div>
                                                     <img src={require('../../images/terrace.svg')}  alt="" style={{width:"50px"}}/>
@@ -107,7 +85,7 @@ class House8Page extends Component{
                                         </div>
                                         <span className="f-s-24">терраса</span>
                                     </div>
-                                    <div className="detail_area col-md-12 m-t-100">53500 BYN</div>
+                                    <div className="detail_area col-md-12 m-t-100">27800 $</div>
                                     <a className="button" href="/">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                                 </div>
                             </div>
@@ -116,7 +94,6 @@ class House8Page extends Component{
                                     <TabList>
                                         <Tab>Планировка</Tab>
                                         <Tab>Фасады</Tab>
-                                        <Tab>ИНтерьер</Tab>
                                     </TabList>
 
                                     <TabPanel>
@@ -199,66 +176,7 @@ class House8Page extends Component{
                                             }
                                         />}
                                     </TabPanel>
-                                    <TabPanel>
-                                        <div className="outline-no" onClick={() => this.toggleI(0)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/8/i1.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        <div className="outline-no" onClick={() => this.toggleI(1)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/8/i2.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        <div className="outline-no" onClick={() => this.toggleI(2)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/8/i3.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        <div className="outline-no" onClick={() => this.toggleI(3)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/8/i4.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        <div className="outline-no" onClick={() => this.toggleI(4)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/8/i5.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        {this.state.stateI &&
-                                        <Lightbox
-                                            mainSrc={imagesI[this.state.selectedI]}
-                                            nextSrc={imagesI[(this.state.selectedI + 1) % imagesI.length]}
-                                            prevSrc={imagesI[(this.state.selectedI + imagesI.length - 1) % imagesI.length]}
-                                            onCloseRequest={() => this.setState({ stateI: false })}
-                                            onMovePrevRequest={() =>
-                                            this.setState({
-                                                selectedI: (this.state.selectedI + imagesI.length - 1) % imagesI.length,
-                                            })
-                                            }
-                                            onMoveNextRequest={() =>
-                                            this.setState({
-                                                selectedI: (this.state.selectedI + 1) % imagesI.length,
-                                            })
-                                            }
-                                        />}
-                                    </TabPanel>
                                 </Tabs>
-                            </div>
-                            <div className="description-block">
-                                <h2 className="text-header">Проект П-102</h2>
-                                <div className="description-text">Маленькие дома являются самыми привлекательными и уютными, и подтверждением данному факту следует выбрать этот проект. Относительно небольшое строение, которое обладает и изысканной архитектурой и продуманной внутренней планировкой пространства. Оптимальным вариантом является размещение данного строения на небольших земельных участках. Привлекательная фасадная группа имеет просторное крыльцо и массивные колонны с крышей, под которой так приятно наслаждаться свежим воздухом и приятным досугом. Внешняя отделка сочетает в себе элементы из натуральных древесных панелей и классической штукатурки в бежевых и серых тонах. В нижней части дома располагается открытая кухня, которая условно зонирована от пространства гостиной и столовой. Помимо этого там есть подсобное помещение – котельная, которая имеет отдельный выход на задний двор и зимний сад дома. В планировке используется общий дымоход для котельной и гостиной – дополнительное удобство в плане эксплуатации строения. Прихожая, которая располагается на первом этаже, соединена с ванной. Второй этаж является зоной отдыха, там есть две спальни поменьше и одна большая спальня с собственным гардеробом. Помимо этого на втором этаже имеется собственный гардероб и ванная. Данный проект отличается индивидуальностью, оригинальностью и уютом. В относительно небольшом пространстве сформированы оптимальные условия для частного проживания.
-                                </div>
                             </div>
                             <Price />
                             <Feedback/>
