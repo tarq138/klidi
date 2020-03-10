@@ -1,13 +1,32 @@
 import React, { Component } from 'react';
 import Header from './header';
+import { FaCheck, FaTimes } from 'react-icons/fa';
+import Modal from 'react-modal';
+const customStyles = {
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)'
+    }
+};
 
 class HomePage extends Component{
     constructor(props) {
         super(props);
         this.submitForm = this.submitForm.bind(this);
         this.state = {
-          status: ""
+          status: "",
+          openModal: false
         };
+    }
+    closeModal(){
+        this.setState({stateForm: false})
+    }
+    openModal(){
+        this.setState({stateForm: true})
     }
     submitForm(ev) {
         ev.preventDefault();
@@ -20,9 +39,9 @@ class HomePage extends Component{
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 200) {
                 form.reset();
-                this.setState({ status: "SUCCESS" });
+                this.setState({ status: "SUCCESS", stateForm: false});
             } else {
-                this.setState({ status: "ERROR" });
+                this.setState({ status: "ERROR", stateForm: false });
             }
         };
         xhr.send(data);
@@ -84,7 +103,8 @@ class HomePage extends Component{
                             <div className="flex-sb m-3" style={{textAlign: "center"}}>
                                 <div className="w-50 h-250 p-r">
                                     <p className="h2">
-                                        Используют древесину естественной влажности !
+                                        <FaTimes />
+                                        Используют древесину естественной влажности.<br/>
                                         (При эксплуатации древесина начнёт усыхать и 
                                         изменять свои геометрические характеристики, 
                                         что скажется на геометрии дома)
@@ -92,7 +112,8 @@ class HomePage extends Component{
                                 </div>
                                 <div className="w-50  p-r">
                                     <p className="h2" >
-                                        Мы используем только древесину камерной сушки
+                                    <FaCheck/>
+                                        Мы используем только древесину камерной сушки.
                                     </p>
                                 </div>
                             </div>
@@ -100,14 +121,16 @@ class HomePage extends Component{
                             <div className="flex-sb m-3" style={{textAlign: "center"}}>
                                 <div className="w-50 h-250 p-r">
                                     <p className="h2">
-                                        Применяют для соединения панелей доску сечением 50мм 
+                                        <FaTimes />
+                                        Применяют для соединения панелей доску сечением 50мм.<br/>
                                         (Грубое нарушение технологии, которое может привести 
                                         к разрушению конструкции)
                                     </p>
                                 </div>
                                 <div className="w-50  p-r">
                                     <p className="h2" >
-                                        Наша компания применяет стыковочный брус 
+                                    <FaCheck/>
+                                        Наша компания применяет стыковочный брус сечением 90мм.
                                     </p>
                                 </div>
                             </div>
@@ -115,13 +138,15 @@ class HomePage extends Component{
                             <div className="flex-sb m-3" style={{textAlign: "center"}}>
                                 <div className="w-50 h-250 p-r">
                                     <p className="h2">
-                                        Используют некачественный крепёж
+                                        <FaTimes />
+                                        Используют некачественный крепёж.<br/>
                                         (При нагрузках саморезы просто ломаются и не выполняют свою функцию)
                                     </p>
                                 </div>
                                 <div className="w-50  p-r">
                                     <p className="h2" >
-                                        Используем оцинкованный импортный крепёж
+                                    <FaCheck/>
+                                        Используем оцинкованный импортный крепёж.
                                     </p>
                                 </div>
                             </div>
@@ -129,13 +154,15 @@ class HomePage extends Component{
                             <div className="flex-sb m-3" style={{textAlign: "center"}}>
                                 <div className="w-50 h-250 p-r">
                                     <p className="h2">
-                                        Осуществляют раскрой панелей вручную на строительной площадке
+                                    <FaTimes />
+                                        Осуществляют раскрой панелей вручную на строительной площадке.<br/>
                                         (Невозможно достичь вручную, такого качества, как на производстве)
                                     </p>
                                 </div>
                                 <div className="w-50  p-r">
                                     <p className="h2" >
-                                        Мы доставляем готовый заводской домокомплект
+                                    <FaCheck/>
+                                        Мы доставляем готовый заводской домокомплект.
                                     </p>
                                 </div>
                             </div>
@@ -143,15 +170,27 @@ class HomePage extends Component{
                             <div className="flex-sb m-3" style={{textAlign: "center"}}>
                                 <div className="w-50 h-250 p-r">
                                     <p className="h2">
-                                        Отсутствует конструкционный крепёж
+                                    <FaTimes />
+                                        Отсутствует конструкционный крепёж.<br/>
                                         (Конструкция не связана в единое целое, что приводит к шаткости конструкции) 
                                     </p>
                                 </div>
                                 <div className="w-50  p-r">
                                     <p className="h2" >
-                                    Мы используем итальянский конструкционный крепёж
+                                        <FaCheck/>
+                                    Мы используем итальянский конструкционный крепёж.
                                     </p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="section">
+                    <div className="block-wrapper">
+                        <div className="Form-Container border" style={{borderRadius: "20px"}}>
+                            <div className="form" style={{height: "100px"}}>
+                                <div className="h2">ПОСТРОЙТЕ СВОЙ ДОМ С ПРОФЕССИОНАЛАМИ</div>
+                                <button onClick={this.openModal.bind(this)} className="button" data-fancybox="" data-type="ajax" href="#" style={{width: "325px", cursor: "pointer", borderRadius: "20px"}}>ОСТАВИТЬ ЗАЯВКУ</button>
                             </div>
                         </div>
                     </div>
@@ -270,6 +309,40 @@ class HomePage extends Component{
                         </div>
                     </div>
                 </section>
+                <Modal
+                    isOpen={this.state.stateForm}
+                    style={customStyles}
+                    onRequestClose={this.closeModal.bind(this)}
+                    closeOnEscape={true}
+                >
+                    <div className="seminar">
+                        <form id="seminar_form" className="form-container loopFormController" action="https://formspree.io/xpzrkylq" method="POST" onSubmit={this.submitForm.bind(this)}>
+                            <h3 style={{textAlign: "center",marginTop: "0"}}>Форма обратной связи</h3>
+                            <div className="input form-item">
+                                <label>Имя</label>
+                                <input placeholder="Имя" type="text" name="name" id="seminar_fio"  className="inputbot big-input -required filterInputsTextController inputsEscapeController "/>
+                                <span className="error-description"></span>
+                            </div>
+                            <input type="hidden" name="_subject" value="НОВАЯ ЗАЯВКА" />
+                            <div className="input form-item">
+                                <label >Почта</label>
+                                <input placeholder="example@gmail.com" type="text" name="_replyto" id="seminar_email" className="inputbot big-input -required filterInputsTextController inputsEscapeController "/>
+                                <span className="error-description"></span>
+                            </div>
+
+                            <div className="input form-item">
+                                <label>Телефон</label>
+                                <input placeholder="+375 (12) 456 78 90" type="text" name="phone" id="seminar_phone" className="inputbot big-input -required filterInputsTextController inputsEscapeController " maxLength="18"/>
+                                <span className="error-description"></span>
+                            </div>
+
+                            <div className="input form-item" style={{margin: "20px 0 0 0"}}>
+                                <input type="submit"  value="Отправить" className="button"/>
+                            </div>
+
+                        </form>
+                    </div>
+                </Modal>
             </div>
         )
     }

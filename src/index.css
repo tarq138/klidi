@@ -1113,11 +1113,13 @@ li.react-tabs__tab {
   background-color: rgb(88, 118, 64) !important;
 }
 .why{
-  background-color:#eee;
+  border-radius: 20px;
+  background-color:#f9f9f9;
   padding: 27px 50px;
 }
 .why_sip{
-  background-color:#eee;
+  border-radius: 20px;
+  background-color:#f9f9f9;
   margin-top: 80px;
   padding: 27px 50px 170px;
   background-image: url('./images/sip.jpg');
