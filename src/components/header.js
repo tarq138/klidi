@@ -25,7 +25,7 @@ class Header extends Component{
                                                 </a>
                                             </div>
                                             <div className="h-240 w-300 m-0-20 p-r">
-                                                <a href="/bathes">
+                                                <a href="/baths">
                                                     <div className="image i-12">
                                                         <div className="image-shadow"></div>
                                                         <div className="p-a image-text">Проекты бань</div>
@@ -35,10 +35,9 @@ class Header extends Component{
                                         </div>
                                     </div> 
                                 </div>
-                                <div>Услуги</div>
-                                <div>Галерея</div>
+                                <div><a href="/services">Услуги</a></div>
                                 <div><a href="/about">О нас</a></div>
-                                <div>Контакты</div>
+                                <div><a href="/contacts">Контакты</a></div>
                             </nav>
                             <a href="tel:+375339041280" className="header__link header--font">
                                 <span>+375-33-904-12-80</span>

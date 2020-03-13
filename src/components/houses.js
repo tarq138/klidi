@@ -242,28 +242,6 @@ class HousesPage extends Component{
                     </div>
 
                     <div className="item-wrapper house-block">
-                        <a className="flex-c" href="/house/11">
-                            <div className="item-content house-item">
-                                <div style={{backgroundImage: `url(${House11})`}} className="item-image">
-                                    <div className="hover-effect"></div>
-                                </div>
-                                <div style={{margin: "0px"}} className="item-title t-align-c">
-                                    <div style={{marginTop: "15px"}}>Проект П-122</div>
-                                    <div className="flex-sb">
-                                        <span className="item-price">24000 $</span>
-                                        <span className="item-area">
-                                            122м
-                                            <sup>
-                                                <small>2</small>
-                                            </sup>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className="item-wrapper house-block">
                         <a className="flex-c" href="/house/12">
                             <div className="item-content house-item">
                                 <div style={{backgroundImage: `url(${House12})`}} className="item-image">

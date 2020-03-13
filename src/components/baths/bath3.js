@@ -8,10 +8,13 @@ import Price from '../price';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; 
 import Feedback from '../feedback'
-class House7Page extends Component{
+
+class Bath3Page extends Component{
     state = {
         selectedP: 0,
         stateP: false,
+        selectedR: 0,
+        stateR: false,
         selectedF: 0,
         stateF: false,
         stateFeedback: false
@@ -22,19 +25,21 @@ class House7Page extends Component{
     toggleP(index){
         this.setState({selectedP: index, stateP: true})
     }
+    toggleR(index){
+        this.setState({selectedR: index, stateR: true})
+    }
     toggleF(index){
         this.setState({selectedF: index, stateF: true})
     }
     render(){
         const imagesP = [
-            require("../../images/houses/7/p1.jpg"),
-            require("../../images/houses/7/p2.jpg")
+            require("../../images/baths/3/p1.jpeg")
+        ];
+        const imagesR = [
+            require("../../images/baths/3/r1.jpeg")
         ];
         const imagesF = [
-            require("../../images/houses/7/f1.jpg"),
-            require("../../images/houses/7/f2.jpg"),
-            require("../../images/houses/7/f3.jpg"),
-            require("../../images/houses/7/f4.jpg")
+            require("../../images/baths/3/f1.jpeg")
         ];
         return(
             <>
@@ -42,54 +47,18 @@ class House7Page extends Component{
                 <section className="qwer">
                     <div className="block-wrapper">
                         <div className="q">
-                            <h1>Проект П-150</h1>
+                            <h1>Баня Б-81</h1>
                         </div>
                         <div className="qq">
                             <div className="qqq">
                                 <AwesomeSlider>
-                                    <div data-src={require("../../images/houses/7/m1.jpg")} />
-                                    <div data-src={require("../../images/houses/7/m2.jpg")} />
-                                    <div data-src={require("../../images/houses/7/m3.jpg")} />
-                                    <div data-src={require("../../images/houses/7/m4.jpg")} />
+                                    <div data-src={require("../../images/baths/3/m1.jpeg")} />
                                 </AwesomeSlider>  
                             </div>
                             <div className="qqqq">
-                                <div className="detail_area col-md-12">150м<sup>2</sup></div>
+                            <div className="detail_area col-md-12">40м<sup>2</sup>+41м<sup>2</sup> терраса</div>
                                 <div className="flex-sb flex-w">
-                                    <div className="flex-c w-50 flex-r m-bot w-100-1">
-                                        <div className="flex f-s-50">
-                                            4
-                                            <div>
-                                                <div>
-                                                    <img src={require('../../images/bedroom.svg')}  alt="" style={{width:"50px"}}/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span className="f-s-24">комнат</span>
-                                    </div>
-                                    <div className="flex-c w-50 flex-r m-bot w-100-1">
-                                        <div className="flex f-s-50">
-                                            2
-                                            <div>
-                                                <div>
-                                                    <img src={require('../../images/wc.svg')}  alt="" style={{width:"50px"}}/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span className="f-s-24">санузел</span>
-                                    </div>
-                                    <div className="flex-c w-50 flex-r m-bot w-100-1">
-                                        <div className="flex f-s-50">
-                                            1
-                                            <div>
-                                                <div>
-                                                    <img src={require('../../images/terrace.svg')}  alt="" style={{width:"50px"}}/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span className="f-s-24">терраса</span>
-                                    </div>
-                                    <div className="detail_area col-md-12 m-t-100">31200 $</div>
+                                    <div className="detail_area col-md-12 price-bath">23900 $</div>
                                     <a className="button" href="#" onClick={this.toogleFeedback.bind(this)}>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                                 </div>
                             </div>
@@ -97,7 +66,8 @@ class House7Page extends Component{
                                 <Tabs>
                                     <TabList>
                                         <Tab>Планировка</Tab>
-                                        <Tab>Фасады</Tab>
+                                        <Tab>Реализация</Tab>
+                                        <Tab>Фасад</Tab>
                                     </TabList>
 
                                     <TabPanel>
@@ -105,14 +75,7 @@ class House7Page extends Component{
                                             <div style={{
                                                 cursor: 'pointer',
                                                 maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/7/p1.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        <div className="outline-no" onClick={() => this.toggleP(1)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/7/p2.jpg')})`
+                                                backgroundImage: `url(${require('../../images/baths/3/p1.jpeg')})`
                                             }} className="q123" ></div>
                                         </div>
                                         {this.state.stateP &&
@@ -134,32 +97,37 @@ class House7Page extends Component{
                                         />}
                                     </TabPanel>
                                     <TabPanel>
+                                        <div className="outline-no" onClick={() => this.toggleR(0)} >
+                                            <div style={{
+                                                cursor: 'pointer',
+                                                maxWidth: '100%',
+                                                backgroundImage: `url(${require('../../images/baths/3/r1.jpeg')})`
+                                            }} className="q123" ></div>
+                                        </div>
+                                        {this.state.stateR &&
+                                        <Lightbox
+                                            mainSrc={imagesR[this.state.selectedR]}
+                                            nextSrc={imagesR[(this.state.selectedR + 1) % imagesR.length]}
+                                            prevSrc={imagesR[(this.state.selectedR + imagesR.length - 1) % imagesR.length]}
+                                            onCloseRequest={() => this.setState({ stateF: false })}
+                                            onMovePrevRequest={() =>
+                                            this.setState({
+                                                selectedR: (this.state.selectedR + imagesR.length - 1) % imagesR.length,
+                                            })
+                                            }
+                                            onMoveNextRequest={() =>
+                                            this.setState({
+                                                selectedR: (this.state.selectedR + 1) % imagesR.length,
+                                            })
+                                            }
+                                        />}
+                                    </TabPanel>
+                                    <TabPanel>
                                         <div className="outline-no" onClick={() => this.toggleF(0)} >
                                             <div style={{
                                                 cursor: 'pointer',
                                                 maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/7/f1.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        <div className="outline-no" onClick={() => this.toggleF(1)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/7/f2.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        <div className="outline-no" onClick={() => this.toggleF(2)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/7/f3.jpg')})`
-                                            }} className="q123" ></div>
-                                        </div>
-                                        <div className="outline-no" onClick={() => this.toggleF(3)} >
-                                            <div style={{
-                                                cursor: 'pointer',
-                                                maxWidth: '100%',
-                                                backgroundImage: `url(${require('../../images/houses/7/f4.jpg')})`
+                                                backgroundImage: `url(${require('../../images/baths/3/f1.jpeg')})`
                                             }} className="q123" ></div>
                                         </div>
                                         {this.state.stateF &&
@@ -167,7 +135,7 @@ class House7Page extends Component{
                                             mainSrc={imagesF[this.state.selectedF]}
                                             nextSrc={imagesF[(this.state.selectedF + 1) % imagesF.length]}
                                             prevSrc={imagesF[(this.state.selectedF + imagesF.length - 1) % imagesF.length]}
-                                            onCloseRequest={() => this.setState({ stateF: false })}
+                                            onCloseRequest={() => this.setState({ stateP: false })}
                                             onMovePrevRequest={() =>
                                             this.setState({
                                                 selectedF: (this.state.selectedF + imagesF.length - 1) % imagesF.length,
@@ -192,4 +160,4 @@ class House7Page extends Component{
         )
     }
 }
-export default House7Page
+export default Bath3Page

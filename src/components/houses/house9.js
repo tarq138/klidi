@@ -4,7 +4,7 @@ import 'react-awesome-slider/dist/styles.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css';
 import Header from '../header';
-import Price from './price';
+import Price from '../price';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; 
 import Feedback from '../feedback'
@@ -13,8 +13,12 @@ class House9Page extends Component{
         selectedP: 0,
         stateP: false,
         selectedF: 0,
-        stateF: false
+        stateF: false,
+        stateFeedback: false
     };
+    toogleFeedback(){
+        this.setState({stateFeedback: true})
+    }
     toggleP(index){
         this.setState({selectedP: index, stateP: true})
     }
@@ -77,7 +81,7 @@ class House9Page extends Component{
                                     </div>
                                     <div className="flex-c w-50 flex-r m-bot w-100-1">
                                         <div className="flex f-s-50">
-                                            0
+                                            1
                                             <div>
                                                 <div>
                                                     <img src={require('../../images/terrace.svg')}  alt="" style={{width:"50px"}}/>
@@ -87,7 +91,7 @@ class House9Page extends Component{
                                         <span className="f-s-24">терраса</span>
                                     </div>
                                     <div className="detail_area col-md-12 m-t-100">43000 $</div>
-                                    <a className="button" href="/">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+                                    <a className="button" href="#" onClick={this.toogleFeedback.bind(this)}>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                                 </div>
                             </div>
                             <div className="w-100" data-tabs="true" style={{marginTop: "25px"}}>
@@ -187,7 +191,7 @@ class House9Page extends Component{
                                 </Tabs>
                             </div>
                             <Price />
-                            <Feedback/>
+                            <Feedback stateFeedback={this.state.stateFeedback}/>
                         </div>
                     </div>
                 </section>

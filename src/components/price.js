@@ -45,7 +45,7 @@ class Price extends Component{
                         <Tab>
                             <div>
                                 <div style={{textAlign: "center"}}>
-                                    <img src={require('../../images/fundament.svg')}  alt="" style={{width:"150px"}}/>
+                                    <img src={require('../images/fundament.svg')}  alt="" style={{width:"150px"}}/>
                                 </div>
                             </div>
                             Фундамент
@@ -53,7 +53,7 @@ class Price extends Component{
                         <Tab>
                             <div>
                                 <div style={{textAlign: "center"}}>
-                                    <img src={require('../../images/walls.svg')}  alt="" style={{width:"150px"}}/>
+                                    <img src={require('../images/walls.svg')}  alt="" style={{width:"150px"}}/>
                                 </div>
                             </div>
                             Стеновой проект
@@ -61,7 +61,7 @@ class Price extends Component{
                         <Tab>
                             <div>
                                 <div style={{textAlign: "center"}}>
-                                    <img src={require('../../images/roof.svg')}  alt="" style={{width:"150px"}}/>
+                                    <img src={require('../images/roof.svg')}  alt="" style={{width:"150px"}}/>
                                 </div>
                             </div>
                             Кровля
@@ -69,7 +69,7 @@ class Price extends Component{
                         <Tab>
                             <div>
                                 <div style={{textAlign: "center"}}>
-                                    <img src={require('../../images/escort_hover.svg')}  alt="" style={{width:"150px"}}/>
+                                    <img src={require('../images/escort_hover.svg')}  alt="" style={{width:"150px"}}/>
                                 </div>
                             </div>
                             Сопровождение<br/> строительства    

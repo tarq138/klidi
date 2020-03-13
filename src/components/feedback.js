@@ -40,6 +40,11 @@ class Feedback extends Component{
         };
         xhr.send(data);
     }
+    componentWillReceiveProps(newProps){
+        if(newProps.stateFeedback){
+            this.openModal()
+        }
+    }
     render(){
         return(
             <>

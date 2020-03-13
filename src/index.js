@@ -16,8 +16,13 @@ import House11Page from './components/houses/house11';
 import House12Page from './components/houses/house12';
 import House13Page from './components/houses/house13';
 import HousesPage from './components/houses';
+import BathsPage from './components/baths';
+import Bath1Page from './components/baths/bath1';
+import Bath2Page from './components/baths/bath2';
+import Bath3Page from './components/baths/bath3';
 import AboutPage from './components/about';
 import ContactsPage from './components/contacts';
+import ServicesPage from './components/services';
 import HomePage from './components/home';
 
 class NotFound extends Component{render(){return <h2>Ресурс не найден</h2>;}}
@@ -99,10 +104,39 @@ class Houses extends Component{
     }
 }
 
+class Baths extends Component{
+  render(){
+    return <BathsPage/>
+  }
+}
+
+class Bath1 extends Component{
+  render(){
+    return <Bath1Page/>
+  }
+}
+
+class Bath2 extends Component{
+  render(){
+    return <Bath2Page/>
+  }
+}
+
+class Bath3 extends Component{
+  render(){
+    return <Bath3Page/>
+  }
+}
 class About extends Component{
     render(){
       return <AboutPage/>
     }
+}
+
+class Services extends Component{
+  render(){
+    return <ServicesPage/>
+  }
 }
 
 class Contacts extends Component{
@@ -115,6 +149,10 @@ render(
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/houses" component={Houses} />
+        <Route path="/baths" component={Baths} />
+        <Route path="/bath/1" component={Bath1} />
+        <Route path="/bath/2" component={Bath2} />
+        <Route path="/bath/3" component={Bath3} />
         <Route path="/house/1" component={House1} />
         <Route path="/house/2" component={House2} />
         <Route path="/house/3" component={House3} />
@@ -130,6 +168,7 @@ render(
         <Route path="/house/13" component={House13} />
         <Route path="/about" component={About} />
         <Route path="/contacts" component={Contacts} />
+        <Route path="/services" component={Services} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>,
