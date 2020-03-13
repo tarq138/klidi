@@ -67,125 +67,121 @@ class HomePage extends Component{
                 <section className="section">
                     <div className="block-wrapper">
                         <h1 className="main-section-title">Дома и бани по канадской технологии</h1>
-                        <Row className="m-3">
-                            <Col md="6" className="h-350 p-r" style={{marginBottom: "10px"}}>
+                        <div className="flex-sb m-3">
+                            <div className="w-50 h-350 p-r">
                                 <a href="/houses">
                                     <div className="image i-13">
                                         <div className="image-shadow"></div>
                                         <div className="p-a image-text">Проекты домов</div>
                                     </div>
                                 </a>
-                            </Col>
-                            <Col md="6" className="h-350 p-r">
+                            </div>
+                            <div className="w-50 h-350 p-r">
                                 <a href="/baths">
                                     <div className="image i-12">
                                         <div className="image-shadow"></div>
                                     </div>
                                     <div className="p-a image-text">Проекты бань</div>
                                 </a>
-                            </Col>
-                        </Row>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section className="section">
                     <div className="block-wrapper">
                         <div className="why">
-                            <Row className="m-3">
-                                <Col md="12">
-                                <h2 className="main-section-title">Почему именно мы?</h2>
-                                </Col>
-                            </Row>
-                            
-                            <Row style={{textAlign: "center"}} className="m-3">
-                                <Col md="6" className="p-r">
+                            <h2 className="main-section-title">Почему именно мы?</h2>
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
                                     <p className="h2">
                                         <b>Как делают конкуренты?</b>
                                     </p>
-                                </Col>
-                                <Col md="6" className="p-r">
+                                </div>
+                                <div className="w-50  p-r">
                                     <p className="h2">
                                         <b>Как делаем мы?</b>
                                     </p>
-                                </Col>
-                            </Row>
-                            <Row style={{textAlign: "center"}} className=" m-3">
-                                <Col md="6" className="p-r">
-                                    <p className="h2 m-3">
+                                </div>
+                            </div>
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
                                         <FaTimes />
                                         Используют древесину естественной влажности.<br/>
                                         (При эксплуатации древесина начнёт усыхать и 
                                         изменять свои геометрические характеристики, 
                                         что скажется на геометрии дома)
                                     </p>
-                                </Col>
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3" >
-                                    <FaCheck/>
+                                </div>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        <FaCheck/>
                                         Мы используем только древесину камерной сушки.
                                     </p>
-                                </Col>
-                            </Row>
-                            <Row style={{textAlign: "center"}} className=" m-3">
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3">
+                                </div>
+                            </div>
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
                                         <FaTimes />
                                         Применяют для соединения панелей доску сечением 50мм.<br/>
                                         (Грубое нарушение технологии, которое может привести 
                                         к разрушению конструкции)
                                     </p>
-                                </Col>
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3" >
-                                    <FaCheck/>
+                                </div>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        <FaCheck/>
                                         Наша компания применяет стыковочный брус сечением 90мм.
                                     </p>
-                                </Col>
-                            </Row>
-                            <Row style={{textAlign: "center"}} className=" m-3">
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3">
+                                </div>
+                            </div>
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
                                         <FaTimes />
                                         Используют некачественный крепёж.<br/>
                                         (При нагрузках саморезы просто ломаются и не выполняют свою функцию)
-                                    </p> 
-                                </Col>
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3" >
-                                    <FaCheck/>
+                                    </p>
+                                </div>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        <FaCheck/>
                                         Используем оцинкованный импортный крепёж.
                                     </p>
-                                </Col>
-                            </Row>
-                            <Row style={{textAlign: "center"}} className=" m-3">
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3">
-                                    <FaTimes />
+                                </div>
+                            </div>
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        <FaTimes />
                                         Осуществляют раскрой панелей вручную на строительной площадке.<br/>
                                         (Невозможно достичь вручную, такого качества, как на производстве)
                                     </p>
-                                </Col>
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3" >
-                                    <FaCheck/>
+                                </div>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        <FaCheck/>
                                         Мы доставляем готовый заводской домокомплект.
                                     </p>
-                                </Col>
-                            </Row>
-                            <Row style={{textAlign: "center"}} className=" m-3">
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3">
-                                    <FaTimes />
+                                </div>
+                            </div>
+                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
+                                        <FaTimes />
                                         Отсутствует конструкционный крепёж.<br/>
-                                        (Конструкция не связана в единое целое, что приводит к шаткости конструкции) 
+                                        (Конструкция не связана в единое целое, что приводит к шаткости конструкции)
                                     </p>
-                                </Col>
-                                <Col md="6" className="p-r">
-                                <p className="h2 m-3" >
+                                </div>
+                                <div className="w-50 h-250 p-r">
+                                    <p className="h2">
                                         <FaCheck/>
-                                    Мы используем итальянский конструкционный крепёж.
+                                        Мы используем итальянский конструкционный крепёж.
                                     </p>
-                                </Col>
-                            </Row>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -202,8 +198,8 @@ class HomePage extends Component{
                 <section className="section">
                     <div className="block-wrapper">
                         <h2 className="main-section-title">Почему с нами надёжно</h2>
-                        <Row className=" m-3" style={{textAlign: "center"}}>
-                            <Col md="4" className="h-250 p-r">
+                        <div className="flex-sb m-3 save" style={{textAlign: "center"}}>
+                            <div className="w-50 h-250 p-r">
                                 <div style={{marginBottom: "20px"}}>
                                     <div>
                                         <img src={require('../images/1.PNG')}  alt="" style={{width:"200px"}}/>
@@ -214,8 +210,8 @@ class HomePage extends Component{
                                     не&nbsp;меняется после заключения<br/>
                                     договора
                                 </p>
-                            </Col>
-                            <Col md="4" className="h-250 p-r">
+                            </div>
+                            <div className="w-50 h-250 p-r">
                                 <div style={{marginBottom: "20px"}}>
                                     <div>
                                         <img src={require('../images/2.PNG')}  alt="" style={{width:"200px"}}/>
@@ -227,8 +223,8 @@ class HomePage extends Component{
                                     Вам не&nbsp;нужно приезжать<br/>
                                     на&nbsp;стройку
                                 </p>
-                            </Col>
-                            <Col md="4" className="h-250 p-r">
+                            </div>
+                            <div className="w-50 h-250 p-r">
                                 <div style={{marginBottom: "20px"}}>
                                     <div>
                                         <img src={require('../images/3.PNG')}  alt="" style={{width:"200px"}}/>
@@ -240,8 +236,8 @@ class HomePage extends Component{
                                     мира - картинка не отличается от<br/>
                                     реальности<br/>
                                 </p>
-                            </Col>
-                        </Row>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section className="section">

@@ -1486,6 +1486,18 @@ i.service8 {
   }
 }
 @media (max-width: 768px) {
+  .why_sip{
+    margin-top: 0px;
+  }
+  .sip_why{
+    width: 100%
+  }
+  .why{
+    padding: 27px 20px;
+  }
+  .why_sip .thead{
+    font-size: 30px !important;
+  }
   .header__nav{
     display: none !important;
   }
@@ -1515,6 +1527,15 @@ i.service8 {
   #formCalculating{
     margin-left: 20px !important;
     width: 80% !important;
+  }
+  .save .w-50{
+    width:30% !important;
+  }
+  .save img{
+    width: 130px !important;
+  }
+  .save .h2{
+    font-size: 16px !important;
   }
 }
 .eltdf-mo-icon-holder {
@@ -1577,6 +1598,9 @@ i.service8 {
 }
 .eltdf-mobile-nav ul {
   list-style-type: none;
+}
+.menu-button{
+  width: 40px;
 }
 .menu-button:hover > .eltdf-mobile-nav{
   display:block !important;

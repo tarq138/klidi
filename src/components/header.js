@@ -23,22 +23,22 @@ class Header extends Component{
                                                 <span>Проекты домов</span>
                                                 </a>
                                             </li>
-                                        <li id="mobile-menu-item-8174" className="menu-item menu-item-type-post_type menu-item-object-page ">
+                                        <li className="menu-item menu-item-type-post_type menu-item-object-page ">
                                             <a href="https://hotplans.by/individualnoe-proektirovanie/" className="">
                                                 <span>Проекты бань</span>
                                             </a>
                                         </li>
                                         <li id="mobile-menu-item-7633" className="menu-item menu-item-type-post_type menu-item-object-page ">
                                             <a href="/services" className="">
-                                                <span>Услгуи</span>
+                                                <span>Услуги</span>
                                             </a>
                                         </li>
-                                        <li id="mobile-menu-item-7634" class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
                                             <a href="/about" class="">
                                                 <span>О нас</span>
                                             </a>
                                         </li>
-                                        <li id="mobile-menu-item-7635" class="menu-item menu-item-type-post_type menu-item-object-page ">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page ">
                                             <a href="/contacts" class="">
                                                 <span>Контакты</span>
                                             </a>
