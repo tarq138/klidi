@@ -24,7 +24,7 @@ class Header extends Component{
                                                 </a>
                                             </li>
                                         <li className="menu-item menu-item-type-post_type menu-item-object-page ">
-                                            <a href="https://hotplans.by/individualnoe-proektirovanie/" className="">
+                                            <a href="/baths" className="">
                                                 <span>Проекты бань</span>
                                             </a>
                                         </li>
