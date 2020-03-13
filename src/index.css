@@ -1486,6 +1486,9 @@ i.service8 {
   }
 }
 @media (max-width: 768px) {
+  .seminar{
+    width: 300px;
+  }
   #simpleForm{
     height: 130px !important;
   }
