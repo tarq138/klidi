@@ -188,7 +188,7 @@ class HomePage extends Component{
                 <section className="section">
                     <div className="block-wrapper">
                         <div className="Form-Container border" style={{borderRadius: "20px"}}>
-                            <div className="form" style={{height: "100px"}}>
+                            <div className="form" style={{height: "100px"}} id="simpleForm">
                                 <div className="h2">ПОСТРОЙТЕ СВОЙ ДОМ С ПРОФЕССИОНАЛАМИ</div>
                                 <button onClick={this.openModal.bind(this)} className="button" data-fancybox="" data-type="ajax" href="#" style={{width: "325px", cursor: "pointer", borderRadius: "20px"}}>ОСТАВИТЬ ЗАЯВКУ</button>
                             </div>

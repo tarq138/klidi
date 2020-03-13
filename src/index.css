@@ -1486,6 +1486,13 @@ i.service8 {
   }
 }
 @media (max-width: 768px) {
+  #simpleForm{
+    height: 130px !important;
+  }
+  #simpleForm button{
+    height: 50px;
+    color: #2b2b2f;
+  }
   .why_sip{
     margin-top: 0px;
   }
