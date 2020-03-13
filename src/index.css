@@ -1505,6 +1505,17 @@ i.service8 {
   .m-t-100{
     margin-top: 0 !important;
   }
+  .calc-class{
+    display: flow-root !important;
+    background-position: 40px center !important;
+  }
+  #calculating{
+    margin-left: 20px;
+  }
+  #formCalculating{
+    margin-left: 20px !important;
+    width: 80% !important;
+  }
 }
 .eltdf-mo-icon-holder {
     cursor: pointer;

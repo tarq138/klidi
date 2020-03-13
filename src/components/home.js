@@ -281,14 +281,14 @@ class HomePage extends Component{
                 </section>
                 <section className="section">
                     <div className="block-wrapper calc-class" style={{display: "flex"}}>
-                        <div style={{width: "45%"}}>
+                        <div style={{width: "45%"}} id="calculating">
                             <h2 className="h1">Уже сделали расчёт в другой компании?</h2>
                             <div>
                                 <p className="h2">Никогда не поздно найти более интересные условия и избежать уловок строителей.</p>
                                 <p className="h2">Мы сделаем бесплатный аудит сметы и укажем на возможные подводные камни.</p>
                             </div>
                         </div>
-                        <div style={{width: "55%", marginLeft: "35%"}} encType="multipart/form-data">
+                        <div style={{width: "55%", marginLeft: "35%"}} encType="multipart/form-data" id="formCalculating">
                             <form className="form-container" id="audit" action="https://formspree.io/xpzrkylq" method="POST" onSubmit={this.submitForm}>
                                 <p className="h3">Оставить заявку</p>
                                 <div className="audit-success-img"></div>
