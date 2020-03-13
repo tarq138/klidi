@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import {Row, Col} from 'reactstrap'
 const customStyles = {
     content : {
       top                   : '50%',
@@ -82,16 +83,20 @@ class Feedback extends Component{
                         </form>
                     </div>
                 </Modal>
-                <section className="section">
-                    <div className="block-wrapper">
-                        <div className="Form-Container border">
-                            <div className="form">
-                                <div className="h2">ПОСТРОЙТЕ СВОЙ ДОМ ВМЕСТЕ С KLIDI</div>
-                                <div className="desc">Наш менеджер свяжется с вами по почте или телефону</div>
-                                <button onClick={this.openModal.bind(this)} className="button" data-fancybox="" data-type="ajax" href="#" style={{width: "325px", cursor: "pointer"}}>ОСТАВИТЬ ЗАЯВКУ</button>
+                <section className="section" style={this.props.margin ? {marginTop: "120px"} : {}}>
+                    <Row>
+                        <Col md="12">
+                            <div className="block-wrapper">
+                                <div className="Form-Container border">
+                                    <div className="form">
+                                        <div className="h2">ПОСТРОЙТЕ СВОЙ ДОМ ВМЕСТЕ С KLIDI</div>
+                                        <div className="desc">Наш менеджер свяжется с вами по почте или телефону</div>
+                                        <button onClick={this.openModal.bind(this)} className="button" data-fancybox="" data-type="ajax" href="#" style={{width: "325px", cursor: "pointer"}}>ОСТАВИТЬ ЗАЯВКУ</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            </Col>
+                    </Row>
                 </section>
             </>
         )

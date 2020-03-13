@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {render} from 'react-dom';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import House1Page from './components/houses/house1';
 import House2Page from './components/houses/house2';
 import House3Page from './components/houses/house3';

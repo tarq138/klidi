@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './header';
 import { FaCheck, FaTimes } from 'react-icons/fa';
 import Modal from 'react-modal';
+import { Row, Col } from 'reactstrap'
 const customStyles = {
     content : {
       top                   : '50%',
@@ -66,122 +67,125 @@ class HomePage extends Component{
                 <section className="section">
                     <div className="block-wrapper">
                         <h1 className="main-section-title">Дома и бани по канадской технологии</h1>
-                        <div className="flex-sb m-3">
-                            <div className="w-50 h-350 p-r">
+                        <Row className="m-3">
+                            <Col md="6" className="h-350 p-r" style={{marginBottom: "10px"}}>
                                 <a href="/houses">
                                     <div className="image i-13">
                                         <div className="image-shadow"></div>
                                         <div className="p-a image-text">Проекты домов</div>
                                     </div>
                                 </a>
-                            </div>
-                            <div className="w-50 h-350 p-r">
-                                <div className="image i-12">
-                                    <div className="image-shadow"></div>
-                                </div>
-                                <div className="p-a image-text">Проекты бань</div>
-                            </div>
-                        </div>
+                            </Col>
+                            <Col md="6" className="h-350 p-r">
+                                <a href="/baths">
+                                    <div className="image i-12">
+                                        <div className="image-shadow"></div>
+                                    </div>
+                                    <div className="p-a image-text">Проекты бань</div>
+                                </a>
+                            </Col>
+                        </Row>
                     </div>
                 </section>
                 <section className="section">
                     <div className="block-wrapper">
                         <div className="why">
-                            <h2 className="main-section-title">Почему именно мы?</h2>
-                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
-                                <div className="w-50 h-250 p-r">
+                            <Row className="m-3">
+                                <Col md="12">
+                                <h2 className="main-section-title">Почему именно мы?</h2>
+                                </Col>
+                            </Row>
+                            
+                            <Row style={{textAlign: "center"}} className="m-3">
+                                <Col md="6" className="p-r">
                                     <p className="h2">
                                         <b>Как делают конкуренты?</b>
                                     </p>
-                                </div>
-                                <div className="w-50  p-r">
+                                </Col>
+                                <Col md="6" className="p-r">
                                     <p className="h2">
                                         <b>Как делаем мы?</b>
                                     </p>
-                                </div>
-                            </div>
-                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
-                                <div className="w-50 h-250 p-r">
-                                    <p className="h2">
+                                </Col>
+                            </Row>
+                            <Row style={{textAlign: "center"}} className=" m-3">
+                                <Col md="6" className="p-r">
+                                    <p className="h2 m-3">
                                         <FaTimes />
                                         Используют древесину естественной влажности.<br/>
                                         (При эксплуатации древесина начнёт усыхать и 
                                         изменять свои геометрические характеристики, 
                                         что скажется на геометрии дома)
                                     </p>
-                                </div>
-                                <div className="w-50  p-r">
-                                    <p className="h2" >
+                                </Col>
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3" >
                                     <FaCheck/>
                                         Мы используем только древесину камерной сушки.
                                     </p>
-                                </div>
-                            </div>
-                            
-                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
-                                <div className="w-50 h-250 p-r">
-                                    <p className="h2">
+                                </Col>
+                            </Row>
+                            <Row style={{textAlign: "center"}} className=" m-3">
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3">
                                         <FaTimes />
                                         Применяют для соединения панелей доску сечением 50мм.<br/>
                                         (Грубое нарушение технологии, которое может привести 
                                         к разрушению конструкции)
                                     </p>
-                                </div>
-                                <div className="w-50  p-r">
-                                    <p className="h2" >
+                                </Col>
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3" >
                                     <FaCheck/>
                                         Наша компания применяет стыковочный брус сечением 90мм.
                                     </p>
-                                </div>
-                            </div>
-
-                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
-                                <div className="w-50 h-250 p-r">
-                                    <p className="h2">
+                                </Col>
+                            </Row>
+                            <Row style={{textAlign: "center"}} className=" m-3">
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3">
                                         <FaTimes />
                                         Используют некачественный крепёж.<br/>
                                         (При нагрузках саморезы просто ломаются и не выполняют свою функцию)
-                                    </p>
-                                </div>
-                                <div className="w-50  p-r">
-                                    <p className="h2" >
+                                    </p> 
+                                </Col>
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3" >
                                     <FaCheck/>
                                         Используем оцинкованный импортный крепёж.
                                     </p>
-                                </div>
-                            </div>
-
-                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
-                                <div className="w-50 h-250 p-r">
-                                    <p className="h2">
+                                </Col>
+                            </Row>
+                            <Row style={{textAlign: "center"}} className=" m-3">
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3">
                                     <FaTimes />
                                         Осуществляют раскрой панелей вручную на строительной площадке.<br/>
                                         (Невозможно достичь вручную, такого качества, как на производстве)
                                     </p>
-                                </div>
-                                <div className="w-50  p-r">
-                                    <p className="h2" >
+                                </Col>
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3" >
                                     <FaCheck/>
                                         Мы доставляем готовый заводской домокомплект.
                                     </p>
-                                </div>
-                            </div>
-
-                            <div className="flex-sb m-3" style={{textAlign: "center"}}>
-                                <div className="w-50 h-250 p-r">
-                                    <p className="h2">
+                                </Col>
+                            </Row>
+                            <Row style={{textAlign: "center"}} className=" m-3">
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3">
                                     <FaTimes />
                                         Отсутствует конструкционный крепёж.<br/>
                                         (Конструкция не связана в единое целое, что приводит к шаткости конструкции) 
                                     </p>
-                                </div>
-                                <div className="w-50  p-r">
-                                    <p className="h2" >
+                                </Col>
+                                <Col md="6" className="p-r">
+                                <p className="h2 m-3" >
                                         <FaCheck/>
                                     Мы используем итальянский конструкционный крепёж.
                                     </p>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
                         </div>
                     </div>
                 </section>
@@ -198,8 +202,8 @@ class HomePage extends Component{
                 <section className="section">
                     <div className="block-wrapper">
                         <h2 className="main-section-title">Почему с нами надёжно</h2>
-                        <div className="flex-sb m-3" style={{textAlign: "center"}}>
-                            <div className="w-50 h-250 p-r">
+                        <Row className=" m-3" style={{textAlign: "center"}}>
+                            <Col md="4" className="h-250 p-r">
                                 <div style={{marginBottom: "20px"}}>
                                     <div>
                                         <img src={require('../images/1.PNG')}  alt="" style={{width:"200px"}}/>
@@ -210,8 +214,8 @@ class HomePage extends Component{
                                     не&nbsp;меняется после заключения<br/>
                                     договора
                                 </p>
-                            </div>
-                            <div className="w-50 h-250 p-r">
+                            </Col>
+                            <Col md="4" className="h-250 p-r">
                                 <div style={{marginBottom: "20px"}}>
                                     <div>
                                         <img src={require('../images/2.PNG')}  alt="" style={{width:"200px"}}/>
@@ -223,8 +227,8 @@ class HomePage extends Component{
                                     Вам не&nbsp;нужно приезжать<br/>
                                     на&nbsp;стройку
                                 </p>
-                            </div>
-                            <div className="w-50 h-250 p-r">
+                            </Col>
+                            <Col md="4" className="h-250 p-r">
                                 <div style={{marginBottom: "20px"}}>
                                     <div>
                                         <img src={require('../images/3.PNG')}  alt="" style={{width:"200px"}}/>
@@ -236,8 +240,8 @@ class HomePage extends Component{
                                     мира - картинка не отличается от<br/>
                                     реальности<br/>
                                 </p>
-                            </div>
-                        </div>
+                            </Col>
+                        </Row>
                     </div>
                 </section>
                 <section className="section">
@@ -245,8 +249,8 @@ class HomePage extends Component{
                         <div className="flex-sb m-3">
                             <div className="w-100 p-r">
                                 <div className="why_sip">
-                                    <div className="row" >
-                                        <div className="col-md-12">
+                                    <Row>
+                                        <Col md="10">
                                             <p className="thead h2">Почему именно SIP технология?</p>
                                             <p className="sip_why h2">
                                                 <b>Отделка сразу</b><br/>
@@ -268,8 +272,8 @@ class HomePage extends Component{
                                                 <b>Скорость строительства</b><br/>
                                                 Срок строительства типового проекта 2-3 недели.
                                             </p>
-                                        </div>
-                                    </div>
+                                        </Col>
+                                    </Row>
                                 </div>
                             </div>
                         </div>
