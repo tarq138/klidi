@@ -163,6 +163,7 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100px;
+  position: relative;
   height: 30px;
 }
 
