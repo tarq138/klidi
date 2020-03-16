@@ -84,7 +84,7 @@ class BathsPage extends Component{
                     </Col>
                     </Row>
                 </div>
-                <Feedback/>
+                <Feedback margin={true}/>
             </div>
         )
     }
