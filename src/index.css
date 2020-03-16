@@ -258,7 +258,7 @@ code {
 }
 
 .m-t-100 {
-  margin-top: 196px;
+  margin-top: 192px;
 }
 
 .detail_area {
@@ -277,6 +277,7 @@ code {
 .f-s-24 {
   font-size: 24px;
   line-height: 5px;
+  padding-top: 8px;
 }
 .flex {
   display: flex;
