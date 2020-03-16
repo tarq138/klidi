@@ -1,11 +1,9 @@
-html{
-  overflow: hidden auto;
-}
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif !important;
   color: #333;
   font-size: 10px !important;
+  overflow: hidden auto;
 }
 
 a {
