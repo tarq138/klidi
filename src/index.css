@@ -1486,6 +1486,7 @@ i.service8 {
   }
 }
 @media (max-width: 768px) {
+
   .seminar{
     width: 300px;
   }
@@ -1520,6 +1521,7 @@ i.service8 {
   .header__link{
     float: right;
     padding-right: 20px;
+    padding-top: 6px;
   }
   .image-shadow{
     display: none;
@@ -1560,8 +1562,8 @@ i.service8 {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: 18px;
-    height: 16px;
+    width: 30px;
+    height: 24px;
 }
 .eltdf-mo-line.eltdf-line-1 {
     top: 0;
@@ -1610,7 +1612,7 @@ i.service8 {
   list-style-type: none;
 }
 .menu-button{
-  width: 40px;
+  padding-right: 5px;
 }
 .menu-button:hover > .eltdf-mobile-nav{
   display:block !important;
