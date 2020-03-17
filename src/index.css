@@ -258,7 +258,7 @@ code {
 }
 
 .m-t-100 {
-  margin-top: 192px;
+  margin-top: 172px;
 }
 
 .detail_area {
@@ -1487,7 +1487,6 @@ i.service8 {
   }
 }
 @media (max-width: 768px) {
-
   .seminar{
     width: 300px;
   }
@@ -1621,4 +1620,8 @@ i.service8 {
 .row{
   margin-right: 0px !important;
   margin-left: 0px !important;
+}
+
+.detail_area{
+  padding-top: 10px;
 }
