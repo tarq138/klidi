@@ -175,7 +175,7 @@ class House1Page extends Component{
                                 </Tabs>
                             </div>
                             <Price />
-                            {/* <Feedback stateFeedback={this.state.stateFeedback}/>*/}
+                            <Feedback stateFeedback={this.state.stateFeedback}/>
                         </div>
                     </div>
                 </section>
