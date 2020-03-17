@@ -1526,6 +1526,7 @@ i.service8 {
   .image-shadow{
     display: none;
   }
+  .price-bath,
   .m-t-100{
     margin-top: 0 !important;
   }
