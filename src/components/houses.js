@@ -30,11 +30,11 @@ class HousesPage extends Component{
                                         <div className="hover-effect"></div>
                                     </div>
                                     <div style={{margin: "0px"}} className="item-title t-align-c">
-                                        <div style={{marginTop: "15px"}}>Проект П-44</div>
+                                        <div style={{marginTop: "15px"}}>Проект П-59</div>
                                         <div className="flex-sb">
                                             <span className="item-price">14900 $</span>
                                             <span className="item-area">
-                                                44м
+                                                59м
                                                 <sup>
                                                     <small>2</small>
                                                 </sup>

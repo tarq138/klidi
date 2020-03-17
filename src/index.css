@@ -3,7 +3,6 @@ body {
   font-family: 'Roboto', sans-serif !important;
   color: #333;
   font-size: 10px !important;
-  overflow: hidden auto;
 }
 
 a {
@@ -1618,4 +1617,8 @@ i.service8 {
 }
 .menu-button:hover > .eltdf-mobile-nav{
   display:block !important;
+}
+.row{
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }

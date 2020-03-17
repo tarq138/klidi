@@ -41,7 +41,7 @@ class House1Page extends Component{
                 <section className="qwer">
                     <div className="block-wrapper">
                         <div className="q">
-                            <h1>Проект П-44</h1>
+                            <h1>Проект П-59</h1>
                         </div>
                         <div className="qq">
                             <div className="qqq">
@@ -53,7 +53,7 @@ class House1Page extends Component{
                                 </AwesomeSlider>  
                             </div>
                             <div className="qqqq">
-                                <div className="detail_area col-md-12">44м<sup>2</sup></div>
+                                <div className="detail_area col-md-12">59м<sup>2</sup></div>
                                 <div className="flex-sb flex-w">
                                     <div className="flex-c w-50 flex-r m-bot w-100-1">
                                         <div className="flex f-s-50">
@@ -175,7 +175,7 @@ class House1Page extends Component{
                                 </Tabs>
                             </div>
                             <Price />
-                            <Feedback stateFeedback={this.state.stateFeedback}/>
+                            {/* <Feedback stateFeedback={this.state.stateFeedback}/>*/}
                         </div>
                     </div>
                 </section>
