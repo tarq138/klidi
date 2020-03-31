@@ -83,21 +83,19 @@ class Feedback extends Component{
                         </form>
                     </div>
                 </Modal>
-                <section className="section" style={this.props.margin ? {marginTop: "120px"} : {}}>
-                    <Row>
-                        <Col md="12">
-                            <div className="block-wrapper">
-                                <div className="Form-Container border">
-                                    <div className="form">
-                                        <div className="h2">ПОСТРОЙТЕ СВОЙ ДОМ ВМЕСТЕ С KLIDI</div>
-                                        <div className="desc">Наш менеджер свяжется с вами по почте или телефону</div>
-                                        <button onClick={this.openModal.bind(this)} className="button" data-fancybox="" data-type="ajax" href="#" style={{width: "325px", cursor: "pointer"}}>ОСТАВИТЬ ЗАЯВКУ</button>
-                                    </div>
+                <Row  style={this.props.margin ? {marginTop: "120px"} : {}}>
+                    <Col md="12">
+                        <div className="block-wrapper">
+                            <div className="Form-Container border">
+                                <div className="form">
+                                    <div className="h2">ПОСТРОЙТЕ СВОЙ ДОМ ВМЕСТЕ С KLIDI</div>
+                                    <div className="desc">Наш менеджер свяжется с вами по почте или телефону</div>
+                                    <button onClick={this.openModal.bind(this)} className="button" data-fancybox="" data-type="ajax" href="#" style={{width: "100%", display:"block ruby", cursor: "pointer"}}>ОСТАВИТЬ ЗАЯВКУ</button>
                                 </div>
                             </div>
-                            </Col>
-                    </Row>
-                </section>
+                        </div>
+                        </Col>
+                </Row>
             </>
         )
     }
